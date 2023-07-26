@@ -6,8 +6,9 @@ pipeline
         stage('Continuos Download')
         {
             steps
-            {
-                git 'https://github.com/intelliqittrainings/maven.git'
+	    {
+
+                        git 'https://github.com/chintakiran/maven.git'
             }
         }
          stage('Continuos Build')
