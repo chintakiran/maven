@@ -11,5 +11,19 @@ pipeline
                         git 'https://github.com/chintakiran/maven.git'
             }
         }
+
+
+	 stage('Continuos Build')
+        {
+            steps
+            {
+                sh 'mvn package'
+            }
+        }
+
+
+
+
+
 	}
 }
