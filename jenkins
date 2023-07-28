@@ -20,6 +20,14 @@ pipeline
                 sh 'mvn package'
             }
         }
+	 stage('Continuos Deployment')
+        {
+            steps
+            {
+              sh '''scp /var/lib/jenkins/workspace/DeclarativePipeline/webapp/target/webapp.war ubuntu@172.31.27.132:/var/lib/tomcat9/webapps/testapp.war'''
+        }
+        }
+
 
 
 
