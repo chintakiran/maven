@@ -1,0 +1,15 @@
+pipeline
+{
+    agent any
+    stages
+    {
+        stage('Continuos Download')
+        {
+            steps
+	    {
+
+                        git 'https://github.com/chintakiran/maven.git'
+            }
+        }
+	}
+}
