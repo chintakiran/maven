@@ -24,6 +24,7 @@ pipeline
             {
               sh 'scp /var/lib/jenkins/workspace/DeclarativePipeline/webapp/target/webapp.war ubuntu@172.31.27.132:/var/lib/tomcat9/webapps/testapp.war'
         }
+	}
         stage('Continuos Testing')
         {
             steps
